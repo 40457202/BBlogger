@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BBlogger.com: Create or Read Blogs</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menuBar">
+          <a class="menuLogo" href="main.html">BBlogger.com</a>
+          <div class="menuContent">
+            <a id="adminLink" href="admin.html">Admin</a>
+            <button id="loginButton" class="accountButton">Log In</button>
+            <button id="signupButton" class="accountButton">Sign Up</button>
+            <button id="logoutButton" class="accountButton">Log Out</button>
+            <input title="Readonly Username Box" id="accountUsername" class="userString" value="" readonly>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="signupBox" class="accountBox">
+      <h2>Sign Up to BBlogger.com</h2>
+      <label for="signupUsernameInput">Username:</label><br>
+      <input type="text" id="signupUsernameInput" class="accountInput" autocomplete="off"><br>
+      <label for="signupPasswordInput">Password:</label><br>
+      <input type="password" id="signupPasswordInput" class="accountInput" autocomplete="off"><br>
+      <label for="signupRetypeInput">Re-type Password:</label><br>
+      <input type="password" id="signupRetypeInput" class="accountInput" autocomplete="off"><br>
+      <button id="signupSubmit" class="accountButton">Submit</button>
+      <button id="closeSignupButton" class="accountButton">Cancel</button>
+    </div>
+    <div id="loginBox" class="accountBox">
+      <h2>Login to BBlogger.com</h2>
+      <label for="loginUsernameInput">Username:</label><br>
+      <input type="text" id="loginUsernameInput" class="accountInput" autocomplete="off"><br>
+      <label for="loginPasswordInput">Password:</label><br>
+      <input type="password" id="loginPasswordInput" class="accountInput" autocomplete="off"><br>
+      <button id="loginSubmit" class="accountButton">Submit</button>
+      <button id="closeLoginButton" class="accountButton">Cancel</button>
+    </div>
+    <main>
+      <h1 style="font-size: 50px; text-align: center;">Welcome to BBlogger</h1>
+      <div class="row">
+        <div class="column">
+          <h2 class="sectionHeader">Create a Post</h2>
+          <div id="createPost">
+            <div class="postTitle">
+              <h2>Post Title</h2>
+              <div id="postName">
+                <input title="Input a post title" id="nameEditor" class="editor" type="text" maxlength="40">
+              </div>
+            </div>
+            <div class="postTopic">
+              <h2>Post Topic</h2>
+              <div id="topicSelection">
+                <select title="Select a Topic" id="topicsDropdown">
+                  <option selected="selected" value="default">Select a Topic</option>
+                </select>
+              </div>
+            </div>
+            <div class="postContent">
+              <h2>Post Content</h2>
+              <div class="styling">
+                <ul id="contentStyles" class="editStyles">
+                  <li>
+                    <select title="Select Font" id="contentFonts" class="styleDropdown" title="Font">
+                      <option selected="selected" value="arial" style="font-family:arial;">Arial</option>
+                      <option value="courier" style="font-family:courier;">Courier</option>
+                      <option value="times" style="font-family:times">Times</option>
+                      <option value="verdana" style="font-family:verdana;">Verdana</option>
+                    </select>
+                  </li>
+                  <li><button id="contentImage" class="styleButton" title="Insert Image">Image</button></li>
+                  <li><button id="contentLink" class="styleButton" title="Insert Link">Link</button></li>
+                </ul>
+              </div>
+              <div title="Input post content" id="contentEditor" class="editor" contenteditable="true"></div>
+            </div>
+            <div id="submitPost">
+              <button id="submitButton" class="button">Submit Post</button>
+              <button id="cancelButton" class="button">Cancel Editing</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h2 class="sectionHeader">Posts</h2>
+          <div id="posts">
+            <div id="#1" class="card">
+              <h4 class='postHeader'>Travel is the Best Medicine</h4>
+              <h4 class='authorString'>Author: </h4>
+              <h4 class='authorName'>admin</h4><br><br>
+              <h4 class='topicString'>Topic: </h4>
+              <h4 class='topic'>Travel and Tourism</h4>
+              <h4 class='postedTime'>Posted: 29/04/2020 14:40:20</h4>
+              <h4 class='editedTime'>Edited: Never</h4>
+              <div id="1" class="postedContent" contenteditable="false">
+                <img src="images/holidayPicture.jpg" alt="Beach Resort" width="400" height="200" onerror="imgError"><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <button name='#1' class='editButton'>Edit Post</button>
+              <button name='#1' class='removeButton'>Remove Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: arial;
+}
+
+body {
+}
+
+header {
+
+}
+
+main {
+}
+
+.menuBar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.menuBar a {
+  color: #1F305E;
+  padding: 14px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+}
+
+.menuContent .accountButton, .userString {
+  float: right;
+}
+
+.menuBar a:hover {
+  color: #007791;
+}
+
+#adminLink, #logoutButton, #accountUsername {
+  display: none;
+}
+
+main {
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.userString {
+  padding: 3px;
+  font-size: 16px;
+  float: right;
+  color: black;
+  text-align: right;
+  overflow-x: auto;
+  max-width: 200px;
+  border: 0;
+}
+
+
+.accountBox {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  height: 275px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 5px 10px #888888;
+  border: solid 1px #ccc;
+}
+
+#loginBox {
+  height: 265px;
+}
+
+#signupBox {
+  height: 330px;
+}
+
+#loginBox, #signupBox {
+  display: none;
+}
+
+#loginUsernameInput, #signupUsernameInput {
+  margin-bottom: 5px;
+}
+
+.accountBox #closeWindowButton {
+  float: right;
+}
+
+.accountInput {
+  padding: 10px;
+  font-size: 16px;
+  font-family: arial;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.accountButton {
+  padding: 12px;
+  font-size: 16px;
+  font-family: arial;
+  color: #1F305E;
+  text-decoration: none;
+  background-color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+.accountButton:hover {
+  color: #007791;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 14px;
+}
+
+row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.createPost {
+  text-align: center;
+}
+
+.createPost > .postTitle {
+  margin: 0 auto;
+}
+
+.createPost > .postTopic {
+  margin: 0 auto;
+}
+
+.createPost > .postContent {
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  font-size: 35px;
+}
+
+#nameEditor {
+  display: block;
+  width: 100%;
+  font-family: arial;
+  font-size: 24px;
+  background-color: white;
+}
+
+#topicsDropdown {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#contentEditor {
+  font-family: arial;
+  height: 250px;
+  background-color: white;
+}
+
+#submitPost {
+  text-align: center;
+}
+
+.button {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Arial;
+  padding: 5px;
+}
+
+#submitButton {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#cancelButton {
+  display: none;
+}
+
+.textStyle {
+  height: 24px;
+  width: 24px;
+  font-family: times;
+}
+
+.editStyles {
+  list-style: none;
+  padding: 5px;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.editStyles > li {
+  float: left;
+  margin-right: 4px;
+}
+
+.editor {
+  border: solid 3px #ccc;
+  padding: 3px;
+  overflow: auto;
+  font-size: 16px;
+}
+
+.styleButton {
+  padding: 2.5px;
+}
+
+.styleDropdown {
+  float: left;
+  padding: 2.5px;
+}
+
+.insertedImage {
+  display: inline-block;
+  cursor: nesw-resize;
+}
+
+#posts {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 650px;
+  overflow: auto;
+}
+
+.postHeader {
+  font-size: 30px;
+}
+
+.topicString, .topic, .authorString, .authorName {
+  display: inline
+}
+
+.postedContent {
+  font-family: arial;
+  padding: 3px;
+  overflow-y: scroll;
+  font-size: 16px;
+  height: 300px;
+  margin-bottom: 5px;
+  background-color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.editButton {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  font-family: arial;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.removeButton {
+  float: right;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  font-family: arial;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.card {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 5px 10px #888888;
+  border: solid 1px #ccc;
+  margin-bottom: 20px;
+}
+
+.editedTime {
+  padding-left: 3px;
+}
+
+.postedTime {
+  padding-left: 3px;
+}

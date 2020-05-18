@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Page - BBlogger.com</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menuBar">
+          <a class="menuLogo" href="main.html">BBlogger.com</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 style="font-size:45px; text-align:center;">Page Administration</h1>
+      <div class="row">
+        <div id="leftSide" class="column">
+          <h1>Edit Topics</h1>
+          <div class="addingTo">
+            <br><input type="text" title="Input new topic" id="newTopicInput" class="adminInput" placeholder="Enter Topic" maxlength="30" autocomplete="off"><br><br>
+            <button id="addTopicButton" class="addButton">Add Topic</button><br><br><br>
+          </div>
+          <div class="adminBox">
+            <div id="adminTopics">
+              <ul id="topicList" class="elementList"></ul>
+            </div>
+          </div>
+        </div>
+        <div id="rightSide" class="column">
+          <h1>Edit Users</h1>
+          <div class="addingTo">
+            <input type="text" title="Input new username" id="newUsernameInput" class="adminInput" placeholder="Enter Username" maxlength="30" autocomplete="off"><br><br>
+            <input type="text" title="Input new password" id="newPasswordInput" class="adminInput" maxlength="30" placeholder="Enter Password" autocomplete="off"><br><br>
+            <select title="Select Admin privilege" id="newPrivilegeSelect" class="adminInput">
+              <option value=0>Non-Admin</option>
+              <option value=1>Admin</option>
+            </select>
+            <button id="addUserButton" class="addButton">Add User</button><br><br>
+          </div>
+          <div class="adminBox">
+            <div id="userAdmin">
+              <ul id="userList" class="elementList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
